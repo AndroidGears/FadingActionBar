@@ -1,14 +1,14 @@
 apply plugin: 'android-library'
 
 android {
-    compileSdkVersion Integer.parseInt(project.ANDROID_COMPILE_SDK_VERSION)
-    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+    compileSdkVersion 19
+    buildToolsVersion '19.0.3'
 
     defaultConfig {
-        versionName project.VERSION_NAME
-        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName '3.1.2'
+        versionCode 312
 
-        targetSdkVersion Integer.parseInt(project.ANDROID_TARGET_SDK_VERSION)
+        targetSdkVersion 19
     }
 
     sourceSets {
@@ -20,4 +20,3 @@ android {
     }
 }
 
-apply from: '../maven_push.gradle'
